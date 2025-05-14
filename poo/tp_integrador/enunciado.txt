@@ -1,0 +1,50 @@
+Enunciado:
+La Agencia Espacial Internacional desea informatizar parte del sistema de
+gestión de sus misiones, tripulantes y personal técnico.
+Cada persona debe contar al menos con un nombre, un DNI y una
+nacionalidad, y estos datos deben estar protegidos. Los astronautas podrán
+participar en una o varias misiones, registradas en una lista que guarde información
+como nombre de la misión, destino, duración (en días) y el resultado (éxito o fallo).
+Los ingenieros, por su parte, estarán a cargo del soporte técnico y deberán registrar
+el tipo de sistemas que han supervisado (una lista de tuplas con el sistema y su
+estado: por ejemplo, [("Propulsión", "óptimo"), ("Vida", "riesgo medio")]).
+Los directores de misión tendrán un rol clave en la gestión operativa de la
+agencia espacial. Desde su función, deberán contar con la capacidad de asignar
+nuevas misiones a astronautas existentes, lo cual implica asociar un destino, una
+duración estimada y una descripción general al astronauta seleccionado. Además,
+deberán poder registrar evaluaciones de desempeño general una vez finalizadas las
+misiones, almacenando una valoración cualitativa (por ejemplo: "Excelente",
+"Regular", "Deficiente") asociada a cada misión.
+Por último, será su responsabilidad poder consultar informes globales de
+actividad, donde el sistema debe mostrar un resumen de las misiones asignadas,
+las evaluaciones realizadas, y los astronautas que participaron, con el objetivo de
+tener una visión general del estado operativo. Esta funcionalidad puede incluir la
+generación de un archivo de texto (.txt) que almacene dichos informes para su
+posterior análisis o impresión.
+La funcionalidad debe que cada tipo de persona pueda emitir un informe
+personalizado, por ejemplo, un astronauta verá sus misiones y resultados; un
+ingeniero verá los sistemas que ha supervisado y su estado, mientras que un
+director podrá generar un resumen global de desempeño de todo el personal.
+
+El sistema debe verificar posibles errores y lanzar excepciones
+personalizadas ante situaciones como misiones con duración negativa, intentos de
+agregar sistemas repetidos o datos incompletos. Además, se pide que parte de la
+información ingresada se guarde en archivos .txt, por ejemplo: un registro de cada
+misión asignada, un resumen de rendimiento por astronauta, y un log de errores si
+se capturaron excepciones durante el uso del programa. El uso de listas, tuplas y
+diccionarios será clave para representar la información de manera eficiente, y se
+valorará especialmente el diseño modular, la herencia bien aplicada y el uso
+adecuado de métodos y atributos privados.
+
+
+
+notas
+
+clases:
+persona dni nombre nacionalidad (protegidos)
+astronauta misiones 
+ingeniero sistemas
+directores asignar misiones a astronautas, consultar informes. informes en txt
+
+
+
